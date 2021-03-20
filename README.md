@@ -1,6 +1,7 @@
 # Community Service Website
 
-A project based on ASU SER416 class </br>
+Currently in development, estimate finish time: 4/23/21
+SER416 project prototype </br>
 
 ```
 Description from product owner:
