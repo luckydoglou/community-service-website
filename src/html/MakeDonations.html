@@ -31,18 +31,29 @@
         </div>
     </div>
     
-    <section class="make-donation">
+    <section class="make-donation-anonymously">
         <div class="container">
-            <h2>Make Donation</h2>
+            <h2 class="header2">Make Donation Anonymously</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia consectetur quidem velit nesciunt. Voluptatibus inventore repellat hic totam autem?</p>
 
-            <form action="">
-                <label for="login-username">Full Name</label>
-                <input type="text" id="login-username" name="username">
-
+            <form action="MakeDonations.html", onsubmit="alert('Thank You For Your Donation!');">
                 <label for="login-password">Amount</label>
-                <input type="password" id="login-password" name="password">
+                <input type="number" id="donate-amount" name="donate-amount">
+                <input type="submit" class="login-cta" value="Donate">
+            </form>
+        </div>
+    </section>
 
+    <section class="make-donation">
+        <div class="container">
+            <h2 class="header2">Make Donation</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia consectetur quidem velit nesciunt. Voluptatibus inventore repellat hic totam autem?</p>
+
+            <form action="MakeDonations.html", onsubmit="alert('Thank You For Your Donation!');">
+                <label for="login-username">Full Name</label>
+                <input type="text" id="donate-name" name="donate-name">
+                <label for="login-password">Amount</label>
+                <input type="number" id="donate-amount" name="donate-amount">
                 <input type="submit" class="login-cta" value="Donate">
             </form>
         </div>

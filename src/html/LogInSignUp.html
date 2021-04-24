@@ -35,39 +35,84 @@
         </div>
     </div>
 
-    <section class="login">
-        <div class="container">
-            <h2>Log In</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
-            
-            <form action="">
-                <label for="login-username">Username</label>
-                <input type="text" id="login-username" name="username">
-
-                <label for="login-password">Password</label>
-                <input type="password" id="login-password" name="password">
-
-                <input type="submit" class="login-cta" value="Log In">
-            </form>
+    <div class="user-auth">
+        <div>
+            <h2 class="header2">User Authentication</h2>
         </div>
-    </section>
 
-    <section class="signup">
-        <div class="container">
-            <h2>Sign Up</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
-            
-            <form action="">
-                <label for="signup-username">Username</label>
-                <input type="text" id="signup-username" name="username">
+        <section class="login">
+            <div class="container">
+                <h2>Log In</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
+                
+                <form action="index.html" onsubmit="alert('Log In Success!');">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username">
+    
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password">
+    
+                    <input type="submit" class="login-cta" value="Log In">
+                </form>
+            </div>
+        </section>
+    
+        <section class="signup">
+            <div class="container">
+                <h2>Sign Up</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
+                
+                <form action="index.html" onsubmit="alert('Sign Up Success!');">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="username">
+    
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password">
+    
+                    <input type="submit" class="signup-cta" value="Sign Up">
+                </form>
+            </div>
+        </section>
+    </div>
 
-                <label for="signup-password">Password</label>
-                <input type="password" id="signup-password" name="password">
-
-                <input type="submit" class="signup-cta" value="Sign Up">
-            </form>
+    <div class="employee-auth">
+        <div>
+            <h2 class="header2">Employee Authentication</h2>
         </div>
-    </section>
+
+        <section class="login">
+            <div class="container">
+                <h2>Log In</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
+                
+                <form action="Employee-index.html", onsubmit="alert('Log In Success!');">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password">
+                    <input type="submit" class="login-cta" value="Log In">
+                </form>
+            </div>
+        </section>
+    
+        <section class="signup">
+            <div class="container">
+                <h2>Sign Up</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
+                
+                <form action="">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="username">
+    
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password">
+    
+                    <input type="submit" class="signup-cta" value="Sign Up">
+                </form>
+            </div>
+        </section>
+    </div>
+
 
 </body>
 </html>

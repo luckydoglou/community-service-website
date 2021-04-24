@@ -48,11 +48,11 @@ ul {
     padding: 0;
  }
  
- section {
-     padding: 5em 2em;
+section {
+     padding: 1em 2em;
  }
 
- .hero {
+.hero {
     text-align: center;
 }
 
@@ -91,6 +91,11 @@ nav {
     float: right;
     margin: .5em;
     cursor: pointer;
+}
+
+.header2 {
+    text-align: center;
+    padding: 1em 2em;
 }
 
 @media only screen and (min-width: 768px) {

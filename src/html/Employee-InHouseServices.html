@@ -39,6 +39,21 @@
             <div class="in-house-host-events">
                 <h3>Host Events</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit eum reiciendis hic ratione beatae facere soluta cum voluptates tempore!</p>
+                <ul id="event-list">
+
+                </ul>
+                <p>Add Events</p>
+                <form id="add-event-form" action="Employee-InHouseServices.html", onsubmit="addEvent()">
+                    <label for="login-username">Evant Name</label>
+                    <input type="text" id="event-name">
+                    <label for="login-username">Date</label>
+                    <input type="text" id="event-date">
+                    <label for="login-username">Duration</label>
+                    <input type="text" id="event-duration">
+                    <label for="login-username">Fee</label>
+                    <input type="text" id="event-fee">
+                    <button type="button" onclick="addEvent()">Add Event</button>
+                </form>
             </div>
             <div class="in-house-register-classes">
                 <h3>Register Classes</h3>
@@ -95,4 +110,32 @@
         </div>
     </section>
     
+    <script>
+        function addEvent() {
+            var eventList = document.getElementById("event-list");
+            var eventName = document.getElementById("event-name");
+            var eventDate = document.getElementById("event-date");
+            var eventDuration = document.getElementById("event-duration");
+            var eventFee = document.getElementById("event-fee");
+            var newEvent = document.createElement("li");
+            var deleteBtn = document.createElement("button");
+            newEvent.id = "new-event"
+            newEvent.appendChild(document.createTextNode("Event Name: " + eventName.value));
+            newEvent.appendChild(document.createElement("br"));
+            newEvent.appendChild(document.createTextNode("Event Date: " + eventDate.value));
+            newEvent.appendChild(document.createElement("br"));
+            newEvent.appendChild(document.createTextNode("Event Duration: " + eventDuration.value));
+            newEvent.appendChild(document.createElement("br"));
+            newEvent.appendChild(document.createTextNode("Event Fee: $" + eventFee.value));
+            newEvent.appendChild(document.createElement("br"));
+            deleteBtn.innerHTML = "Detele Event";
+            deleteBtn.id = "delete-event";
+            deleteBtn.onclick = function() { 
+                var toBeDeleted = document.getElementById("new-event");
+                toBeDeleted.parentNode.removeChild(toBeDeleted);
+            }
+            newEvent.appendChild(deleteBtn);
+            eventList.appendChild(newEvent);
+        }
+    </script>
 </body>
